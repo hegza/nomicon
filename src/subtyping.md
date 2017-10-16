@@ -72,7 +72,7 @@ where shorter-lived things are needed.
 Similar reasoning applies to why it should be variant over T. It is reasonable
 to be able to pass `&&'static str` where an `&&'a str` is expected. The
 additional level of indirection does not change the desire to be able to pass
-longer lived things where shorted lived things are expected.
+longer lived things where shorter lived things are expected.
 
 However this logic doesn't apply to `&mut`. To see why `&mut` should
 be invariant over T, consider the following code:

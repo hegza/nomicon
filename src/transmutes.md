@@ -18,8 +18,8 @@ same size. The ways to cause Undefined Behavior with this are mind boggling.
 * Transmuting between non-repr(C) types is UB
 * Transmuting an & to &mut is UB
     * Transmuting an & to &mut is *always* UB
-    * No you can't do it
-    * No you're not special
+    * No, you can't do it
+    * No, you're not special
 * Transmuting to a reference without an explicitly provided lifetime
   produces an [unbounded lifetime]
 
